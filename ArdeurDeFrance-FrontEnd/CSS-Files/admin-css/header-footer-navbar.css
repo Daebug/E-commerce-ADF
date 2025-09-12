@@ -1,0 +1,153 @@
+#MainFormHeader {
+    position: fixed;
+    width: 100%;
+    background-color: var(--ColorYellow);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+} #MainFormHeader p {
+    display: flex;
+    font-size: 3.5rem;
+    letter-spacing: 0.5rem;
+    padding: 0.8rem;
+} #MainFormHeaderLogo {
+    height: 5rem;
+    width: auto;
+    border-radius: 1.5rem;
+    margin-left: 1rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+} #MainHeaderButtons {
+    background-color: var(--ColorWhite);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 0.5rem 0 0.5rem 0;
+} #MainHeaderButtons button {
+    background-color: var(--ColorWhite);
+    border: none;
+    border-right: 1px solid rgba(0, 0, 0, 0.5);
+    border-left: 1px solid rgba(0, 0, 0, 0.5);
+    flex: 1;
+    font-size: 1.35rem;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    padding: 0.95rem 0 0.95rem 0;
+} #MainHeaderButtons button:hover {
+    background-color: rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+} #MainHeaderButtons button:active {
+    background-color: rgba(0, 0, 0, 0.15);
+} #MainFormHeaderTopPart {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    width: 100%; 
+    padding: 0 1rem 0 1rem;
+} #MainFormHeaderSearchBar {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 2.5rem;
+    background-color: var(--ColorWhite);
+    padding: 0.25rem 0.3rem;
+    display: none;
+    align-items: center;
+} #MainFormHeaderSearchButton {
+    font-size: 2.25rem;
+    padding: 1rem;
+    border-radius: 50%;
+} #MainFormHeaderDeleteTextButton {
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 1.25rem;
+    border-radius: 50%;
+    display: none;
+} #MainFormHeaderSearchInput {
+    margin: 0 1rem;
+    background-color: var(--ColorWhite);
+    font-size: 2.1rem;
+    width: 45rem;
+    border: none;
+    outline: none;
+    display: none;
+} #MainFormHeaderSearchButton:hover {
+    background-color: rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+} #MainFormHeaderSearchButton:active {
+    background-color: rgba(0, 0, 0, 0.15);
+} #MainFormHeaderDeleteTextButton:hover {
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+} #MainFormHeaderDeleteTextButton:active {
+    color: rgba(0, 0, 0, 0.5);
+} #MainFormHeaderMenuButton {
+    font-size: 3rem;
+    margin: 0 0.5rem 0 1.5rem;
+    padding: 0.75rem 1rem 0.75rem 1rem;
+    border-radius: 50%;
+} #MainFormHeaderMenuButton:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.25);
+} #MainFormHeaderMenuButton:active {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+/* Updated CSS for the navbar */
+.navbar {
+    background-color: var(--ColorYellow);
+    color: #000000;
+    top: 0;
+    right: 0;
+    margin-right: 10px;
+    display: none;
+    position: absolute;
+    height: auto;
+    width: fit-content;
+    flex-direction: column;
+    border-radius: 10px;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+  }
+  
+  .navbar li {
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 15px;
+  }
+  
+  .navbar a, .navbar i {
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .navbar li:hover {
+    color: #2b2929;
+    border-block: 1px solid var(--ColorWhite);
+  }
+  
+  /* CSS for the menu button */
+  .menu-button {
+    cursor: pointer;
+  }
+  
+  /* CSS for overlay */
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  

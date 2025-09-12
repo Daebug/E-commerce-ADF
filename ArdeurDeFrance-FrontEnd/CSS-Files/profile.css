@@ -1,0 +1,316 @@
+.main-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: -60px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 10px;
+    height: 100%;
+    width: 100%;
+    gap: 10px;
+}
+
+
+.content-container{
+    width: 100%;
+
+}
+.content-container.top{
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    gap: 10px;   
+    .name{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 70px;
+        width: 100%;
+        border-block-end: 3px solid black ;
+        border-end-end-radius: 50px;
+        border-end-start-radius: 50px;
+        border-block-start: 3px solid black ;
+        border-start-end-radius: 50px;
+        border-start-start-radius: 50px;
+        gap: 15px;
+
+        h1{
+            font-size: 38px;
+            font-weight: 100;
+            letter-spacing: 7px;
+        }
+        i{  font-size: 30px;
+            font-weight: 100;
+            letter-spacing: 7px;}
+            
+        i:active{
+            color:var(--ColorYellow) ;
+        }
+    }
+    .bio{
+        display:grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));    
+        gap: 20px;
+        padding: 20px;
+        letter-spacing: 2px;
+        *{
+            background-color: antiquewhite;
+            border-radius: 5px;
+            padding: 2px;
+            padding-left:5px;
+            padding-right: 5px;
+        }
+        .email, .phone {
+            grid-column: span 1; /* Each item takes up 1 column */
+            font-size: 18px;
+            text-align: start;
+        }
+        
+        .address {
+            grid-column: span 2; /* Address takes up 2 columns */
+            text-align: center;
+            font-size: 18px;
+        }
+        
+    }
+    .tabs{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        text-align: center;
+        width: 100%;
+        gap: 30px;
+        height: 100%;
+        padding-top: 20px;
+        .tab-radio {
+            display: none; /* Hide the radio buttons */
+        }
+        .tab {
+            width: 100%;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }.tab-radio:checked + .tab {
+            height: 140%;
+            margin-bottom: -20px;
+            color: var(--ColorWhite);
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+        i{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            width: 100%;
+            height: 100%;
+            font-size: 15px;
+            letter-spacing: 4px;
+        }
+        *{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            height: 100%;
+            width: 15%;
+            background-color: #e6cc00;
+            border-radius: 5px;
+        }
+        *:hover{
+            background-color: #c4ae03;
+        }
+        *:active{
+            background-color: #ecd002;
+        }
+    }
+}
+
+.content-container.bottom{
+    height: 50rem;
+    background-color: var(--ColorYellow);
+    margin-bottom: 50px;
+    padding:40px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    *{
+        font-size: 15px;
+    }
+    label{
+        font-size: 22px;
+        letter-spacing: 3px;
+    }
+    p{
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+    .search-bar {
+        padding: 8px 12px; /* Add padding for better visual appearance */
+        border: 1px solid #ccc; /* Add a border for clearer distinction */
+        border-radius: 4px; /* Add rounded corners for a softer look */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth */
+        transition: border-color 0.3s, box-shadow 0.3s; /* Add transition for smoother interaction */
+        width: 100%; /* Ensure the input spans the entire width of its container */
+        max-width: 300px; /* Limit the maximum width for better readability */
+        margin-bottom: 30px;
+    }
+    
+    /* Style for when the input is focused */
+    .search-bar:focus {
+        border-color: #007bff; /* Change border color to indicate focus */
+        box-shadow: 0 4px 8px rgba(0, 123, 255, 0.1); /* Adjust box shadow for focused state */
+        outline: none; /* Remove default outline */
+    }
+    .tab-content {
+        margin-top: 20px;
+        padding: 20px;
+        background-color: #f8f8f8;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+    /* Style for tables */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 15px;
+        
+    }
+
+    th, td {
+        padding: 10px;
+        text-align: left;
+        border-bottom: 3px solid #ddd;
+        
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+
+    /* Style for buttons */
+    .show-more {
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    /* Style for order containers */
+    .order-container {
+        border: 1px solid #ddd;
+        padding: 10px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+    }
+
+    /* Style for order summaries */
+    .order-summary {
+        margin-bottom: 10px;
+    }
+
+    .order-summary label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    /* Style for additional items */
+    .additional-item {
+        display: none;
+    }
+
+    /* Style for order info */
+    .order-info {
+        margin-bottom: 15px;
+    }
+
+    .order-info label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .sample-order p {
+        margin: 5px 0;
+    }
+
+    /* Style for total amount */
+    .total-amount {
+        margin-top: 10px;
+    }
+
+    .total-amount label {
+        font-weight: bold;
+    }
+
+
+
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4);
+      /* Modal Content */
+
+
+    *{
+        font-size: 20px;
+        gap: 10px;
+    }
+    input{
+        padding: 10px;
+        border-radius: 3px;
+    }
+    .modal-content {
+        display: flex;
+        flex-direction: column;
+        background-color: #fefefe;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 40%;
+    }
+    h2{
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 25px;
+    }
+    span{
+        text-align: end;
+    }
+    button{
+        padding: 10px;
+        margin-top: 20px;
+    }
+    
+    /* Close Button */
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+    
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+}
+  
+
+  

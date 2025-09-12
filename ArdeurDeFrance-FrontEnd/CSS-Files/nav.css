@@ -1,0 +1,58 @@
+/* Updated CSS for the navbar */
+.navbar {
+    background-color: var(--ColorYellow);
+    color: #000000;
+    top: 0;
+    right: 0;
+    margin-right: 10px;
+    display: none;
+    position: absolute;
+    height: auto;
+    width: fit-content;
+    flex-direction: column;
+    border-radius: 10px;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+  }
+  
+  .navbar li {
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 15px;
+  }
+  
+  .navbar a, .navbar i {
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .navbar li:hover {
+    color: #2b2929;
+    border-block: 1px solid var(--ColorWhite);
+  }
+  
+  /* CSS for the menu button */
+  .menu-button {
+    cursor: pointer;
+  }
+  
+  /* CSS for overlay */
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  

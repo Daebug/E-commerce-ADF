@@ -1,0 +1,36 @@
+#MainFormMain {
+    width: 100%;
+    height: 100vh; /* Set the height to 100 viewport height */
+    display: flex;
+    flex-direction: column; /* Change to column to stack items vertically */
+    align-items: center;
+    justify-content: center;
+    background-color: var(--ColorWhite);
+}
+
+.main-content-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-top: 71px;
+    background-color: var(--ColorYellow);
+}
+
+
+.cashier-navbar-container{
+    height: 90%;
+    width: 25%;
+    background-color: var(--ColorYellow);
+}
+.cashier-interface-container{
+    height: 90%;
+    width: 75%;     
+    border-radius: 15px;
+    background-color: var(--ColorWhite);
+}

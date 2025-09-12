@@ -1,0 +1,195 @@
+#LogInDisplayContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+} #LogInLeft {
+    background-color: var(--ColorYellow);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} #LogInLeft img {
+    width: 70%;
+    height: auto;
+    padding: 3rem 0;
+} #LogInLeft p {
+    font-size: 2.25rem;
+    font-weight: lighter;
+    letter-spacing: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+    border-top: 2px solid rgb(0, 0, 0);
+    border-bottom: 1px solid rgb(0, 0, 0);
+    padding: 1rem 10rem;
+} #LogInRight {
+    background-color: var(--ColorWhite);
+    min-width: 55rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+} #LogInFormContainer {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+    width: 65%;
+    height: 60%;
+    border-radius: 2rem;
+    padding: 0 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} #UsernameInput, #PasswordInput {
+    font-size: 1.75rem;
+    border-radius: 1rem;
+    padding: 1rem 1rem;
+    border: 1px solid rgb(0, 0, 0);
+    margin-bottom: 1rem;
+} #RememberMeCheckbox, #RememberMeLabel {
+    font-size: 1.5rem;
+    margin-right: 0.75rem;
+    margin-bottom: 1rem;
+} #LogInButton {
+    width: 100%;
+    font-size: 1.75rem;
+    border-radius: 1rem;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+    background-color: var(--ColorYellow);
+    border: none;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+} #LogInButton:hover {
+    cursor: pointer;
+    background-color: #ffe100;
+} #LogInButton:active {
+    background-color: #fdf5b8;
+} #ForgotPassword {
+    font-size: 1.75rem; 
+    letter-spacing: 0.15rem;
+    text-decoration: none;
+    color: #081857;
+} #RegisterLabel, #UserAgreement {
+    display: flex;
+    margin-top: 1rem;
+} #RegisterLabel {
+    margin-top: 3rem;
+} #RegisterLabel p {
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+} #RegisterLabel a {
+    font-size: 1.5rem;
+    letter-spacing: 0.15rem;
+    text-decoration: none;
+    color: #081857;
+    font-weight: bold;
+} #UserAgreement a {
+    font-size: 1.25rem;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+    font-weight: bold;
+    color: #081857;
+} #UserAgreement a:hover,
+#RegisterLabel a:hover, 
+#ForgotPassword:hover,
+#RememberMeCheckbox {
+    font-weight: bold;
+    color: #000000;
+    cursor: pointer;
+} #UserAgreement a:active,
+#RegisterLabel a:active, 
+#ForgotPassword:active {
+    cursor: pointer;
+    color: #081857;
+}
+
+#RegisterDisplayContainer {
+    height: 100%;
+    width: 100%;
+    display: none;
+    background-color: var(--ColorYellow);
+    align-items: center;
+    justify-content: center;
+} #RegisterFormContainer {
+    width: 70%;
+    height: 70%;
+    background-color: rgb(255, 252, 252);
+    border-radius: 2rem;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} #RegisterFormContainerLeft {
+    flex: 1;
+    height: 90%;
+    border-right: 1px solid rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} #RegisterFormContainerLeft img {
+    width: 70%;
+    height: auto;
+    margin-top: 1.5rem;
+    margin-bottom: 5rem;
+} #RegisterFormContainerLeft p {
+    margin-top: 1.5rem;
+    width: 70%;
+    letter-spacing: 0.15rem;
+    font-size: 1.1rem;
+    text-align: center;
+} #RegisterFormContainerLeft a {
+    width: 70%;
+    letter-spacing: 0.1rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #081857;
+    font-weight: bold;
+} #RegisterFormContainerLeft a:hover {
+    color: #000000;
+    cursor: pointer;
+} #RegisterFormContainerRight {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} #RegisterFormContainerRight input {
+    width: 70%;
+    font-size: 1.75rem;
+    padding: 1rem 1rem;
+    border-radius: 1rem;
+    border: 1px solid rgb(0, 0, 0);
+    margin-bottom: 1rem;
+} #RegisterFormContainerRight p {
+    width: 70%;
+    text-align: center;
+    font-size: 1.2rem;
+    letter-spacing: 0.15rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+} #RegisterFormContainerRight a {
+    font-size: 1.2rem;
+    letter-spacing: 0.15rem;
+    text-decoration: none;
+    font-weight: bold;
+    color: #081857;
+} #RegisterFormContainerRight a:hover {
+    color: #000000;
+} #RegisterFormContainerRight button {
+    width: 70%;
+    font-size: 1.75rem;
+    letter-spacing: 0.15rem;
+    border-radius: 1rem;
+    padding: 1rem 0;
+    background-color: var(--ColorYellow);
+    border: none;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+} #RegisterFormContainerRight button:hover {
+    cursor: pointer;
+    background-color: #ffe100;
+} #RegisterFormContainerRight button:active {
+    background-color: #fdf5b8;
+}

@@ -1,0 +1,36 @@
+@font-face {
+    font-family: Lexend;
+    src: url('../Source-Files/Fonts/Lexend-Regular.ttf');
+} @font-face {
+    font-family: Poppins;
+    src: url('../Source-Files/Fonts/Poppins-Regular.ttf');
+} @font-face {
+    font-family: PoppinsLight;
+    src: url('../Source-Files/Fonts/Poppins-Light.ttf');
+} @font-face {
+    font-family: RedHatDisplay;
+    src: url('../Source-Files/Fonts/RedHatDisplay-Regular.ttf');
+}
+
+:root {
+    --ColorYellow: #e6cc00;
+    --ColorWhite: #fdf4dc;
+} * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 11px;
+} body {
+    user-select: none;
+    width: 100%;
+    height: 100vh;
+    height: 100svh;
+    font-family: RedHatDisplay;
+    min-width: 360px;
+} body::-webkit-scrollbar {
+    width: 0;
+} body::-webkit-scrollbar-track {
+    background-color: transparent;
+} body::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}

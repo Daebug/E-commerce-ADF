@@ -1,0 +1,148 @@
+/* Chat container */
+.chat-container {
+  display: flex;
+  height: 100vh;
+  background-color: #f5f5f5; /* Light gray background */
+}
+
+/* Chat content container */
+.chat-content-container {
+  margin-top: 60px;
+  display: flex;
+  width: 100%;
+}
+
+/* Sidebar */
+.sidebar {
+  flex: 1;
+  padding: 20px;
+  background-color: #f2f2f2; /* Light gray background color */
+  overflow-y: auto; /* Enable scrollbar if content overflows */
+}
+
+.user-list {
+  padding: 10px; /* Add padding to the user list */
+}
+
+.user {
+  padding: 8px 12px; /* Adjust padding */
+  margin-bottom: 8px; /* Adjust margin */
+  background-color: var(--ColorYellow); /* White background */
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-size: 20px;
+}
+
+.user:hover {
+  background-color: #e0e0e0; /* Light gray background color on hover */
+}
+
+/* Chat */
+.chat {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid #ccc; /* Gray border on the left */
+}
+
+/* Chat header */
+.chat-header {
+  padding: 20px;
+  border-bottom: 1px solid #ccc; /* Gray border bottom */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#selected-username.username {
+  font-size: 30px;
+}
+.username {
+  font-weight: bold;
+  font-size: 18px; /* Adjust font size */
+}
+
+.header-right button {
+  padding: 13px 20px; /* Adjust button padding */
+  background-color: #007bff; /* Blue color */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.header-right button:hover {
+  background-color: #0056b3; /* Darker blue color on hover */
+}
+
+/* Chat messages */
+.chat-messages {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto; /* Enable scrollbar if content overflows */
+}
+
+.message {
+  padding: 8px 12px; /* Adjust padding */
+  margin-bottom: 10px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px; /* Adjust font size */
+}
+
+.message.received {
+  background-color: #007bff;
+  align-self: flex-start; /* Align received messages to the right */
+  width: fit-content;
+}
+
+.message.sent {
+  width: fit-content;
+  background-color: #e6cc00;
+  align-self: flex-end; /* Align sent messages to the left */
+}
+
+/* Input container */
+.input-container {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #ccc; /* Gray border top */
+  width: 100%;
+}
+
+#message-form {
+  display: flex;
+  width: 100%;
+}
+
+#message-input {
+  flex: 1;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px; /* Adjust font size */
+}
+
+#message-input:focus {
+  outline: none;
+}
+
+#message-form button[type="submit"] {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#message-form button[type="submit"]:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,334 @@
+#MainFormHeader {
+  position: fixed;
+  width: 100%;
+  background-color: var(--ColorYellow);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+#MainFormHeader p {
+  display: flex;
+  font-size: 3.5rem;
+  letter-spacing: 0.5rem;
+  padding: 0.8rem;
+}
+#MainFormHeaderLogo {
+  height: 5rem;
+  width: auto;
+  border-radius: 1.5rem;
+  margin-left: 1rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+#MainHeaderButtons {
+  background-color: var(--ColorWhite);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  padding: 0.5rem 0 0.5rem 0;
+}
+#MainHeaderButtons button {
+  background-color: var(--ColorWhite);
+  border: none;
+  border-right: 1px solid rgba(0, 0, 0, 0.5);
+  border-left: 1px solid rgba(0, 0, 0, 0.5);
+  flex: 1;
+  font-size: 1.35rem;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  padding: 0.95rem 0 0.95rem 0;
+}
+#MainHeaderButtons button:hover {
+  background-color: rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+#MainHeaderButtons button:active {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+#MainFormHeaderTopPart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 1rem 0 1rem;
+}
+#MainFormHeaderSearchBar {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+  border-radius: 2.5rem;
+  background-color: var(--ColorWhite);
+  padding: 0.25rem 0.3rem;
+  display: none;
+  align-items: center;
+}
+#MainFormHeaderSearchButton {
+  font-size: 2.25rem;
+  padding: 1rem;
+  border-radius: 50%;
+}
+#MainFormHeaderDeleteTextButton {
+  font-size: 2rem;
+  color: rgba(0, 0, 0, 0.5);
+  padding: 1.25rem;
+  border-radius: 50%;
+  display: none;
+}
+#MainFormHeaderSearchInput {
+  margin: 0 1rem;
+  background-color: var(--ColorWhite);
+  font-size: 2.1rem;
+  width: 45rem;
+  border: none;
+  outline: none;
+  display: none;
+}
+#MainFormHeaderSearchButton:hover {
+  background-color: rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+#MainFormHeaderSearchButton:active {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+#MainFormHeaderDeleteTextButton:hover {
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+#MainFormHeaderDeleteTextButton:active {
+  color: rgba(0, 0, 0, 0.5);
+}
+#MainFormHeaderMenuButton {
+  font-size: 3rem;
+  margin: 0 0.5rem 0 1.5rem;
+  padding: 0.75rem 1rem 0.75rem 1rem;
+  border-radius: 50%;
+}
+#MainFormHeaderMenuButton:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+#MainFormHeaderMenuButton:active {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+#MainFormMain {
+  display: flex;
+  flex-direction: column;
+  padding-top: 12.5rem;
+  padding-bottom: 30px;
+  background-color: var(--ColorWhite);
+}
+#AddContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#AddIMG {
+  width: 70%;
+  height: auto;
+  padding-bottom: 40px;
+}
+#CheckBrandsLabelContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+#CheckBrandsLabel {
+  font-size: 3rem;
+  letter-spacing: 0.25rem;
+}
+#CheckBrandsButton {
+  font-size: 1.5rem;
+  letter-spacing: 0.25rem;
+  color: #081857;
+  text-decoration: none;
+  display: flex;
+  font-weight: bold;
+}
+#CheckBrandsButton:hover {
+  font-weight: bold;
+  color: #000000;
+}
+.BestSellerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.BestSellerContainer p {
+  font-size: 2rem;
+}
+.BestProductContainer {
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#BestSellerForWomenViewMoreButton,
+#BestSellerForMenViewMoreButton {
+  min-width: 10rem;
+  max-width: 10rem;
+  height: 18rem;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+}
+#BestSellerForWomenViewMoreButton i,
+#BestSellerForMenViewMoreButton i {
+  font-size: 7rem;
+}
+#BestSellerForWomenViewMoreButton:hover,
+#BestSellerForMenViewMoreButton:hover {
+  background-color: rgb(212, 212, 212);
+  cursor: pointer;
+}
+#BestSellerForWomenViewMoreButton:active,
+#BestSellerForMenViewMoreButton:active {
+  background-color: rgb(230, 230, 230);
+}
+.BestSellerProductContainer {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  padding: 1rem 0 1rem 0.5rem;
+  overflow-x: hidden;
+  margin-right: 1rem;
+}
+.Product {
+  min-width: 18rem;
+  max-width: 18rem;
+  height: 18rem;
+  position: relative;
+  margin-right: 1rem;
+}
+.ProductContainerOverlay {
+  position: absolute;
+  border-radius: 1rem;
+  width: 100%;
+  height: 100%;
+}
+.ProductContainerOverlay:hover {
+  background-color: rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+.ProductContainerOverlay:active {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.ProductContainer {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.ImgProductContainer {
+  height: 70%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ProductContainer img {
+  width: 100%;
+  height: auto;
+}
+.ProductContainer .ProductName {
+  padding-top: 0.2rem;
+  font-size: 1.75rem;
+}
+.ProductContainer .ProductPrice {
+  font-size: 1.25rem;
+  margin-bottom: 0.2rem;
+}
+.ProductContainer i {
+  font-size: 1.1rem;
+  margin-right: 0.2rem;
+}
+
+#MainFormFooter {
+  background-color: var(--ColorYellow);
+  padding: 0 3rem 0 3rem;
+}
+#UpperFooter {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0 2rem 0;
+}
+#UpperFooterLabelContainer1 {
+  width: 20rem;
+  padding: 1rem 0 1rem 0;
+}
+#FooterLabel1 {
+  font-size: 2.8rem;
+}
+#FooterLabel2 {
+  font-size: 1.8rem;
+}
+#UpperFooterLabelContainer2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  width: calc(100% - 6rem);
+}
+#FooterLabel3 {
+  font-size: 2rem;
+}
+#UpperFooterLabelContainer2 div {
+  display: flex;
+  justify-content: space-evenly;
+  width: 15rem;
+}
+#UpperFooterLabelContainer2 div i {
+  font-size: 2.5rem;
+  width: 3.8rem;
+  padding: 0.6rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  background-color: black;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ColorYellow);
+}
+#UpperFooterLabelContainer2 div i:hover {
+  background-color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+}
+#UpperFooterLabelContainer2 div i:active {
+  background-color: rgba(0, 0, 0, 0.65);
+}
+#BottomFooter {
+  padding: 1rem 0 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px solid rgba(0, 0, 0, 0.5);
+}
+#BottomFooter p {
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  color: #000000;
+  font-weight: bold;
+}
+#BottomFooter div {
+  width: 35rem;
+  display: flex;
+  justify-content: space-between;
+}
+#BottomFooter a {
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+#BottomFooter a:hover {
+  color: #000000;
+}

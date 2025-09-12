@@ -1,0 +1,117 @@
+.vieworder-content-container{
+    display: flex;
+    position: relative;
+    align-items: start;
+    flex-direction: column;
+    background-color: var(--ColorWhite);
+    height: auto;
+    width: 100%;
+}
+
+.pending-table-container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-top: 180px;
+    width: 100%;
+    overflow: hidden;
+    height: 31rem;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-bottom: 50px;
+}.pending-table-container h2,
+ .processed-table-container h2{
+
+    font-size: 3rem;
+    padding: 10px;
+}
+
+.processed-table-container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    overflow: hidden;
+    height: 50rem;
+    max-height: 50rem;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.vieworder-table-container{
+    height: 20rem;
+    overflow-y: auto;
+}
+
+
+table {
+    height: 100%;
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff; /* White background color */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle effect */
+    font-size: 2rem;
+    border-radius: 10px;
+}
+/* Style for table headers */
+table th {
+    background-color: var(--ColorYellow); /* Blue color */
+    color: #fff; /* White text color */
+    padding: 10px;
+    font-size: 15px;
+}
+
+/* Style for table rows */
+table td {
+    padding: 10px;
+    padding: 10px;
+    font-size: 15px;
+    border:2px solid #d5d1d1;
+}
+
+/* Style for the "Cancel" button */
+table button {
+    background-color: #dc3545; /* Red color */
+    color: #fff; /* White text color */
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the "Cancel" button */
+table button:hover {
+    background-color: #c82333; /* Darker red color on hover */
+}
+
+
+.proceed-to-paypal-container{
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    align-items: center;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-bottom: 60px;
+}
+
+.paypal-button {
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    padding: 10px 150px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2rem;
+}
+
+.paypal-button:hover {
+    background-color: #c0a300;
+}
+

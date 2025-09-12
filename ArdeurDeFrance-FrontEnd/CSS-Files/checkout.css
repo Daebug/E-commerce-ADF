@@ -1,0 +1,193 @@
+/* Container for the entire checkout section */
+.container2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh; /* Adjusted to viewport height for better responsiveness */
+    background-color: var(--ColorWhite); /* Light background color */
+}
+
+/* Main content wrapper */
+.checkout-contents {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Adjusted width for better spacing */
+    margin-left: 60px; /* Adjusted padding for better spacing */
+    margin-right: 60px;
+    margin-top: 120px;
+    margin-bottom: 40px;
+    border-radius: 10px; /* Rounded corners */
+
+}
+
+
+
+.contents-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%; /* Adjusted width for better spacing */
+    overflow: hidden;
+    margin: 0;
+    border-radius: 8px; /* Rounded corners */
+
+}
+
+
+
+/* Styles for the left side containing the checkout form */
+.checkout-form-container {
+    width: 50%; /* Adjusted width for better balance */
+    margin: 20px; /* Adjusted padding for better spacing */
+    padding: 20px;
+}
+.checkout-form-container h1{
+    height: fit-content;
+    position: relative;
+    width: 100%;
+    border-block: 2px solid black;
+    padding: 10px;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+/* Styles for the right side containing the order summary */
+.order-summary-container {
+    height:34rem ;
+    width: 50%; /* Adjusted width for better balance */
+    margin-top: 40px; /* Adjusted padding for better spacing */
+    margin-right: 40px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    scrollbar-width: thin;
+    border-block-end: 2px solid black;
+}
+.order-summary-container h1{
+    height: fit-content;
+    position: absolute;
+    width: 47%;
+    background-color: var(--ColorWhite);
+    border-block-start: 2px solid black;
+    padding: 10px;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.checkout-button-container{
+    display: flex;
+    justify-content: start;
+    gap: 60px;
+    width: 90%;
+    padding-bottom: 60px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+
+/* Styles for the "Return to Cart" button */
+.return-to-cart-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #000000;
+    background-color: var(--ColorYellow);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size:1.3rem;
+}
+
+.return-to-cart-btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    color: #fff;
+}
+
+/* Styles for the "Check Out" button */
+.btn.place-order-btn {
+    padding: 10px;
+    width: 30rem ;
+    text-decoration: none;
+    color: #fff;
+    background-color: #161817; /* Green color */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size:1.3rem;
+
+}
+
+.btn.place-order-btn:hover {
+    background-color: #218838; /* Darker shade on hover */
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .checkout-contents {
+        flex-direction: column; /* Stack content vertically on smaller screens */
+        align-items: center;
+    }
+    .checkout-form-container,
+    .order-summary-container {
+        width: 100%; /* Full width on smaller screens */
+        margin-bottom: 20px; /* Add space between sections */
+    }
+}
+
+/* Styles for the input fields */
+.checkout-form-container input[type="text"],
+.checkout-form-container input[type="email"],
+.checkout-form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ced4da; /* Soft border */
+    border-radius: 5px; /* Rounded corners */
+    box-sizing: border-box;
+}
+
+/* Style for the table */
+.order-summary-container table {
+    width: 100%;
+    border-collapse: collapse; /* Merge table borders */
+    margin-top: 45px; /*     Add space between inputs and table */
+    justify-content: center;
+    align-items: center;
+}
+
+.order-summary-container th,
+.order-summary-container td {
+    padding: 12px;
+    text-align: left;
+    border: 2px solid var(--ColorYellow);
+    font-size: 1.3rem;
+}
+
+.order-summary-container th {
+    background-color: var(--ColorYellow); /* Header background color */
+    color: #000000; /* Header text color */
+    font-weight: bold;
+    
+}
+
+.order-summary-container tbody tr:nth-child(even) {
+    background-color:var(--ColorWhite); /* Alternate row background color */
+}
+
+.order-summary-container tbody tr:hover {
+    background-color:var(--ColorWhite); /* Hover color for rows */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .checkout-form-container input[type="text"],
+    .checkout-form-container input[type="email"],
+    .checkout-form-container textarea {
+        width: 100%;
+    }
+}
