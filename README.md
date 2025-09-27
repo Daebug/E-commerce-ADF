@@ -5,6 +5,7 @@ A comprehensive French-themed e-commerce platform built with PHP, MySQL, and mod
 ## ✨ Features
 
 ### 🛒 Customer Features
+
 - **User Authentication**: Secure login and registration system with session management
 - **Product Catalog**: Browse and search through product collections
 - **Shopping Cart**: Add, remove, and modify items in cart
@@ -16,6 +17,7 @@ A comprehensive French-themed e-commerce platform built with PHP, MySQL, and mod
 - **Responsive Design**: Mobile-friendly interface
 
 ### 👨‍💼 Admin Features
+
 - **Admin Dashboard**: Comprehensive product and order management
 - **Product Management**: Add, update, and delete products (CRUD operations)
 - **Order Management**: Track and update order status
@@ -23,6 +25,7 @@ A comprehensive French-themed e-commerce platform built with PHP, MySQL, and mod
 - **Inventory Control**: Manage product stock and availability
 
 ### 🔧 Technical Features
+
 - **Session Management**: Secure user sessions and authentication
 - **Database Integration**: MySQL database with normalized structure
 - **Email Integration**: PHPMailer for transactional emails
@@ -75,6 +78,7 @@ E-commerce-ADF/
 ## 🚀 Getting Started
 
 ### Prerequisites
+
 - **PHP 7.4+** with the following extensions:
   - mysqli
   - session
@@ -86,22 +90,26 @@ E-commerce-ADF/
 ### Installation
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/yourusername/E-commerce-ADF.git
    cd E-commerce-ADF
    ```
 
 2. **Set up the database**
+
    - Create a MySQL database named `ardeur_de_france`
    - Import the database schema (SQL file should be provided separately)
    - Update database credentials in `connection/connection.php`
 
 3. **Configure PayPal**
+
    - Update PayPal credentials in `process/config.php`
    - Set your PayPal sandbox/production settings
    - Configure return and cancel URLs
 
 4. **Configure web server**
+
    - Point your web server document root to the project directory
    - Ensure PHP has write permissions for image uploads
    - Enable URL rewriting if needed
@@ -113,7 +121,9 @@ E-commerce-ADF/
 ### Configuration
 
 #### Database Connection
+
 Edit `connection/connection.php`:
+
 ```php
 <?php
 $servername = "localhost";
@@ -124,7 +134,9 @@ $dbname = "ardeur_de_france";
 ```
 
 #### PayPal Configuration
+
 Edit `process/config.php` with your PayPal credentials:
+
 ```php
 define('PAYPAL_ID', 'your-paypal-business-email');
 define('PAYPAL_SANDBOX', TRUE); // Set to FALSE for production
@@ -133,6 +145,7 @@ define('PAYPAL_SANDBOX', TRUE); // Set to FALSE for production
 ## 💻 Usage
 
 ### For Customers
+
 1. **Registration/Login**: Access the platform via `LogInSignUpForm.php`
 2. **Browse Products**: Explore the catalog on the main page
 3. **Add to Cart**: Select products and add them to your shopping cart
@@ -140,6 +153,7 @@ define('PAYPAL_SANDBOX', TRUE); // Set to FALSE for production
 5. **Track Orders**: Monitor your order status in the user profile
 
 ### For Administrators
+
 1. **Admin Access**: Navigate to `/admin-side/admin.php`
 2. **Product Management**: Add, edit, or remove products from the catalog
 3. **Order Management**: Update order statuses and track fulfillment
@@ -148,21 +162,25 @@ define('PAYPAL_SANDBOX', TRUE); // Set to FALSE for production
 ## 🔑 Key Components
 
 ### Authentication System
+
 - Secure session-based authentication
 - Password hashing and validation
 - Session timeout and security measures
 
 ### Shopping Cart
+
 - Persistent cart across sessions
 - Real-time cart updates
 - Quantity management
 
 ### Payment Integration
+
 - PayPal payment processing
 - Order confirmation system
 - Payment status tracking
 
 ### Admin Panel
+
 - Comprehensive product management
 - Order fulfillment tracking
 - User account oversight
@@ -191,30 +209,12 @@ define('PAYPAL_SANDBOX', TRUE); // Set to FALSE for production
 ## 🔄 API Endpoints
 
 The application includes various processing scripts that handle:
+
 - User authentication (`process/login.php`, `process/register.php`)
 - Cart management (`process/addtocart.php`, `process/removeCartItem.php`)
 - Order processing (`process/placeOrder.php`, `process/checkoutprocess.php`)
 - Product search (`process/search.php`)
 - Status updates (`process/updatestatus.php`)
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/new-feature`)
-3. Commit your changes (`git commit -am 'Add new feature'`)
-4. Push to the branch (`git push origin feature/new-feature`)
-5. Create a Pull Request
-
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🆘 Support
-
-For support and questions:
-- Create an issue in the GitHub repository
-- Contact the development team
-- Check the documentation in the `process/PHPMailer-master/` directory
 
 ## 🔮 Future Enhancements
 
